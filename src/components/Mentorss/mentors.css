@@ -1,0 +1,60 @@
+.mentors-container{
+   margin-top: 4rem;
+   padding: 0 2rem; 
+   display: flex;
+   flex-direction: column;
+   gap: 4rem;
+   position: relative;
+}
+.mentors_{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+.mentor{
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    color: #ffffff;
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 15rem;
+}
+.mentor:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+.mentor img{
+    width: 10rem;
+    height: 10rem;
+}
+.mentor .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 8rem; */
+}
+.mentor>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+.mentor>:nth-child(3){
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.mentor>:nth-child(5){
+    font-size: 0.8rem;
+}
+.mentors_>:nth-child(2)>button{
+    color: orange;
+}
+
+@media screen and (max-width: 768px){
+   .mentors_{
+    flex-direction: column;
+   } 
+   .mentor:nth-child(2){
+    transform: none;
+}
+}
